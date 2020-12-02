@@ -1,16 +1,8 @@
+from helpers.helpers import read_file
+
+
 def check_sum_2020(*args):
     return sum(args) == 2020
-
-
-def read_file(file_name, cast_type=False):
-    file = []
-    with open(file_name, "r") as readfile:
-        for i in readfile:
-            line = i.strip()
-            if callable(cast_type):
-                line = cast_type(line)
-            file.append(line)
-    return file
 
 
 def get_multiple_of_2_nr_that_sum_2020(input, ):

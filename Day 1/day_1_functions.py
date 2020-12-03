@@ -7,7 +7,7 @@ def check_sum_2020(*args):
 
 def get_multiple_of_2_nr_that_sum_2020(input):
     multiple = 0
-    input_file = read_file("input.txt", int)
+    input_file = read_file(input, int)
     for i in range(len(input_file)):
         current_element = input_file[i]
         for j in range(i, len(input_file)):
@@ -19,7 +19,7 @@ def get_multiple_of_2_nr_that_sum_2020(input):
 
 def get_multiple_of_3_nr_that_sum_2020(input):
     multiple = 0
-    input_file = read_file("input.txt", int)
+    input_file = read_file(input, int)
     for i in range(len(input_file)):
         current_element = input_file[i]
         for j in range(i, len(input_file)):

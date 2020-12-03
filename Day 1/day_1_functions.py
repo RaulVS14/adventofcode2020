@@ -5,7 +5,7 @@ def check_sum_2020(*args):
     return sum(args) == 2020
 
 
-def get_multiple_of_2_nr_that_sum_2020(input, ):
+def get_multiple_of_2_nr_that_sum_2020(input):
     multiple = 0
     input_file = read_file("input.txt", int)
     for i in range(len(input_file)):

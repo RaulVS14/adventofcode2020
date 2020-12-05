@@ -50,3 +50,36 @@ def get_column(column_string):
             limits = [limits[0], limits[1] - ceil((limits[1] - limits[0]) / 2)]
             last_index = 0
     return limits[last_index]
+
+
+def get_plane():
+    plane = []
+    for i in range(128):
+        row = []
+        for _ in range(8):
+            row.append(0)
+        plane.append(row)
+    return plane
+
+
+def map_plane_seats(boarding_passes):
+    plane = get_plane()
+    for i in boarding_passes:
+        plane[i[0]][i[1]] = i[2]
+    return plane
+
+
+def get_mapped_seats(file_name):
+    return map_plane_seats(get_boarding_passes(file_name))
+
+
+def find_seat(file_name):
+    seat_map = get_mapped_seats(file_name)
+    seat = 0
+    for row in seat_map:
+        for i in range(1, len(row) - 1):
+            prev_seat = row[i - 1]
+            next_seat = row[i + 1]
+            if (row[i] == 0) and (prev_seat != 0) and (next_seat != 0):
+                seat = prev_seat + 1
+    return seat

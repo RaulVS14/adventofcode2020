@@ -19,7 +19,7 @@ Learned:
 
 [Day 5: Passport Processing](https://adventofcode.com/2020/day/5)
 
-[Day 6: ](https://adventofcode.com/2020/day/6)
+[Day 6: Custom Customs](https://adventofcode.com/2020/day/6)
 
 Learned:
  - Creating Makefile and bash script for creating files and folders for the day.
@@ -30,3 +30,9 @@ Learned:
     - Commands can be grouped with {}
     - \t = tab and \n = newline in bash and parameters, can be used with printf
     - if structure of bash
+    - \t is bad char to use in code block creation if all code structure is based on spaces
+    
+ - Python list handling
+    - summing arrays to join
+    - using sets and & to find common elements of lists
+    - added check of instance if checking if array is False is required in case array is empty

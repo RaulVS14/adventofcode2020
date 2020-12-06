@@ -1,17 +1,16 @@
 #!/usr/bin/env sh
-foldername="Day $1"
-echo "$1"
+folder_name="Day $1"
 if [ "$1" == "" ]
 then
   echo "Parameter missing. Please add valid number"
 elif ! [[ $1 =~ ^-?[0-9]{1,3}$ ]]
 then
   echo "Provide valid day number"
-elif [ -d "$foldername" ]
+elif [ -d "$folder_name" ]
 then
   echo "Directory /path/to/dir exists."
 else
-  mkdir "$foldername"
+  mkdir "$folder_name"
 
   # create functions file
   {
@@ -22,7 +21,7 @@ else
     printf "def section_2_function(file_name):\n"
     printf "\tfile = read_file(file_name)\n"
     printf "\treturn file\n"
-  }>>"$foldername/day_$1_functions.py"
+  }>>"$folder_name/day_$1_functions.py"
 
   # create main file
   {
@@ -36,7 +35,7 @@ else
     printf "\t# Part 2\n"
     printf "\tprint(output_test_result('result' == section_2_function(\"test_input.txt\"), %s, 1))\n" "$1"
     printf "\tprint(output_result(section_2_function(\"input.txt\"), %s, 1))\n" "$1"
-  }>>"$foldername/day$1.py"
-  git add "$foldername/*"
+  }>>"$folder_name/day$1.py"
+  git add "$folder_name/*"
   printf "\n\n[Day %s: ](https://adventofcode.com/2020/day/%s)" "$1" "$1" >> "README.md"
 fi

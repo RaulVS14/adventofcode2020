@@ -20,3 +20,13 @@ Learned:
 [Day 5: Passport Processing](https://adventofcode.com/2020/day/5)
 
 [Day 6: ](https://adventofcode.com/2020/day/6)
+
+Learned:
+ - Creating Makefile and bash script for creating files and folders for the day.
+    - Install GitBash and link it to PATH to run bash scripts
+    - Install GNUWin make for Makefile
+    - Use regex to validate numeric value in bash
+    - Using bash to create invalid folder names causes issues - use GitBash to remove faulty folders
+    - Commands can be grouped with {}
+    - \t = tab and \n = newline in bash and parameters, can be used with printf
+    - if structure of bash

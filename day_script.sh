@@ -38,4 +38,5 @@ else
     printf "\tprint(output_result(section_2_function(\"input.txt\"), %s, 1))\n" "$1"
   }>>"$foldername/day$1.py"
   git add "$foldername/*"
+  printf "\n\n[Day %s: ](https://adventofcode.com/2020/day/%s)" "$1" "$1" >> "README.md"
 fi

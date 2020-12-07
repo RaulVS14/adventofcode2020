@@ -38,3 +38,5 @@ Learned:
     - added check of instance if checking if array is False is required in case array is empty
 
 [Day 7: Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)
+Learned:
+   - a bit about recursions

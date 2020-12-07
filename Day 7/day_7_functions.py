@@ -2,6 +2,7 @@ import re
 
 from helpers.helpers import read_file
 
+TARGET_BAG = "shiny gold"
 
 def total_occurrence_of_type_of_bag(rules, param):
     keys = [param]
@@ -18,10 +19,19 @@ def total_occurrence_of_type_of_bag(rules, param):
     return len(seen)
 
 
+def recursive_total_occurrence(rules, param):
+    visited = set()
+    for rule, contents in rules.items():
+        if param in contents:
+            visited.add(rule)
+            visited.update(recursive_total_occurrence(rules, rule))
+    return visited
+
+
 def get_total_of_bags_that_fit_shiny_gold_bag(file_name):
     file = read_file(file_name)
     rules = get_rules_map(file)
-    return total_occurrence_of_type_of_bag(rules, "shiny gold")
+    return len(recursive_total_occurrence(rules, TARGET_BAG)) or total_occurrence_of_type_of_bag(rules, TARGET_BAG)
 
 
 def get_rules_map(file):
@@ -39,6 +49,15 @@ def get_rules_map(file):
     return rule_dict
 
 
-def section_2_function(file_name):
+def total_amount_of_bags_inside_type_of_bag(rules, param):
+    ans = 0
+    for y in rules[param]:
+        value = (1 + total_amount_of_bags_inside_type_of_bag(rules, y))
+        ans += rules[param][y] * value
+    return ans
+
+
+def get_total_amount_of_bags_inside_shiny_bag(file_name):
     file = read_file(file_name)
-    return file
+    rules = get_rules_map(file)
+    return total_amount_of_bags_inside_type_of_bag(rules, TARGET_BAG)

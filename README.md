@@ -36,3 +36,5 @@ Learned:
     - summing arrays to join
     - using sets and & to find common elements of lists
     - added check of instance if checking if array is False is required in case array is empty
+
+[Day 7: Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)

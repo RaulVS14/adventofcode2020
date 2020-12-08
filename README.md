@@ -38,5 +38,13 @@ Learned:
     - added check of instance if checking if array is False is required in case array is empty
 
 [Day 7: Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)
+
 Learned:
    - a bit about recursions
+
+[Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)
+
+Learned:
+   - traversing list with while loop
+   - destructing an array
+   - if you have to compensate for loop length in boot code calculations in order to avoid going out of bounds, you are doing the calculation wrong

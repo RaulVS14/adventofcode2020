@@ -49,4 +49,7 @@ Learned:
    - destructing an array
    - if you have to compensate for loop length in boot code calculations in order to avoid going out of bounds, you are doing the calculation wrong
 
-[Day 9: ](https://adventofcode.com/2020/day/9)
+[Day 9: Encoding Error](https://adventofcode.com/2020/day/9)
+
+Learned:
+   - Sliding window algorithm, which is traversing list by sections. It is better alternative for nested loop traversal.

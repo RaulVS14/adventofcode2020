@@ -35,10 +35,18 @@ def get_sum_of_min_max(sum_numbers):
 
 
 def find_contiguous_number_list(file, number):
-    for i in range(len(file)):
-        current_visited = []
-        for j in range(i, len(file)):
-            current_visited.append(file[j])
-            if sum(current_visited) == number:
-                return current_visited
-    return []
+    start = 0
+    end = 0
+    list_sum = 0
+    while list_sum != number:
+        if (end > len(file)):
+            # Safe guard for endless loop
+            return False
+
+        list_sum = sum(file[start: end])
+
+        if list_sum < number:
+            end += 1
+        if list_sum > number:
+            start += 1
+    return file[start:end]

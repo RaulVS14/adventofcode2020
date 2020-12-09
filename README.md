@@ -53,3 +53,26 @@ Learned:
 
 Learned:
    - Sliding window algorithm, which is traversing list by sections. It is better alternative for nested loop traversal.
+   - how to fix pushed commit message:
+      - display list of ~n commits in default text editor
+        ```
+        git rebase -i HEAD~3 
+        ```
+      - replace word pick with reword in front of commit you want to reword
+        ```
+        pick 70fdb9b Add day 8 solutions
+        pick cb47373 Add day 7 solutions <- line to update
+        pick d0fd277 Add day 9 modification
+        ```
+        like this
+        ```
+        pick 70fdb9b Add day 8 solutions
+        reword cb47373 Add day 7 solutions <- line to update
+        pick d0fd277 Add day 9 modification
+        ```
+      - Save and close commit list file.
+      - A new file view opens with the commit message. Change it and save it.
+      - Push changes to branch 
+        ```
+        git push --force
+        ```

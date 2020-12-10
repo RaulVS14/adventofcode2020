@@ -76,3 +76,10 @@ Learned:
         ```
         git push --force
         ```
+
+[Day 10: Adapter Array ](https://adventofcode.com/2020/day/10)
+
+Learned:
+    - About dynamic programming - Top-down with memoization - break down to sub-problem and store the result
+    - Memoization - method of storing calculated results and calling them when we are about to do same calculation. It will make code run faster, because we don't need to do this extra work
+        - In assignment we used mem to store 2nd part values for results

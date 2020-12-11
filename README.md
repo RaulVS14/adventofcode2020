@@ -84,3 +84,8 @@ Learned:
      - Example: Top-down with memoization - break down to sub-problem and store the result
    - **Memoization** - method of storing calculated results and calling them when we are about to do same calculation. It will make code run faster, because we don't need to do this extra work
         - In assignment we used mem to store 2nd part values for results
+
+[Day 11: Seating System](https://adventofcode.com/2020/day/11)
+
+Learned:
+   - replacing while a loop with for a loop to debug while loop step by step

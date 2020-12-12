@@ -89,3 +89,16 @@ Learned:
 
 Learned:
    - replacing while a loop with for a loop to debug while loop step by step
+
+[Day 12: Day 12: Rain Risk](https://adventofcode.com/2020/day/12)
+Learned:
+   - coordinates system based language(English is my second language):
+     - latitude: deg south(-1deg) <-> north(1deg) (distance between equator and position)
+     - longitude: west:(-1deg) <-> east(1deg) (distance between 0 meridian and position)
+   - coordinates rotation formula
+     - There formula is
+       ```
+       x = x * cos(a) - y * sin(a)
+       y = x * sin(a) + y * cos(a)
+       ```
+       where **a** is rotated angle in radians. Angle counterclockwise is positive(90) and clockwise is negative(-90).

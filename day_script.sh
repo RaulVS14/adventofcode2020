@@ -36,6 +36,10 @@ else
     printf "    print(output_test_result('result' == section_2_function(\"test_input.txt\"), %s, 2))\n" "$1"
     printf "    print(output_result(section_2_function(\"input.txt\"), %s, 2))\n" "$1"
   }>>"$folder_name/day$1.py"
+
+  echo "">"$folder_name/test_input.txt"
+  echo "">"$folder_name/input.txt"
   git add "$folder_name/*"
   printf "\n\n[Day %s: ](https://adventofcode.com/2020/day/%s)" "$1" "$1" >> "README.md"
+
 fi

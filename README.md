@@ -102,3 +102,8 @@ Learned:
        y = x * sin(a) + y * cos(a)
        ```
        where **a** is rotated angle in radians. Angle counterclockwise is positive(90) and clockwise is negative(-90).
+
+[Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)
+Learned:
+   - The most obvious isn't always right
+  

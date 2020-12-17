@@ -128,3 +128,10 @@ Learned:
 Learned:
 
 - Organize your dictionary before turning into array
+
+[Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)
+
+Learned:
+
+- Handling multiple dimensions is a loopy business
+

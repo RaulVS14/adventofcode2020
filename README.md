@@ -136,3 +136,5 @@ Learned:
 - Handling multiple dimensions is a loopy business
 
 [Day 18: Operation Order](https://adventofcode.com/2020/day/18)
+
+[Day 19: Monster Messages](https://adventofcode.com/2020/day/19)
